@@ -1,0 +1,57 @@
+#
+# system.prop for logan2g
+#
+
+# GPU
+ro.sf.lcd_density=240
+ro.sf.lcd_width=52
+ro.sf.lcd_height=87
+ro.opengles.version=131072
+ro.product.hardware=logan
+ro.lcd_brightness=160
+debug.hwui.render_dirty_regions=false
+
+# Delay for ConnectivityChange broadcast (ms)
+conn.connectivity_change_delay=0
+
+# NK console device
+persist.ttydev=ttyVUART0
+
+# Open GL
+ro.kernel.qemu=0
+
+# Network
+ril.sim2.present=1
+rild.libpath=/system/lib/libsec-ril.so
+rild.libargs=-d /dev/ttyS0
+# 1 => GSM Only
+# ro.telephony.default_network=1
+gsm.current.phone-type=1
+ro.ril.hsxpa=1
+# ro.ril.gprsclass=12
+ro.ril.ecclist=112,911,#911,*911
+# mobiledata.interfaces=rmnet0,rmnet1
+
+persist.sys.storage_preload=1
+persist.sys.root_access=1
+
+# Low RAM optimizations
+ro.config.low_ram=true
+persist.sys.purgeable_assets=1
+config.disable_atlas=true
+ro.config.max_starting_bg=6
+ro.sys.fw.bg_apps_limit=12
+
+# MultiTouch support
+ro.product.multi_touch_enabled=true
+ro.product.max_num_touch=2
+
+# Transparency for statusbar
+persist.sys.force_highendgfx=true
+
+# Partition path
+ro.product.partitionpath=/dev/block/platform/sprd-sdhci.3/by-name/
+
+# Enable adbd during first boot (for dalvik cache problems)
+persist.service.adb.enable=1
+

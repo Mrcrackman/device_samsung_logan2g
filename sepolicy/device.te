@@ -1,0 +1,2 @@
+# Block device for any swap partition.
+type swap_block_device, dev_type;
