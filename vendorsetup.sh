@@ -1,0 +1,3 @@
+add_lunch_combo cm_logan2g-eng
+add_lunch_combo cm_logan2g-user
+add_lunch_combo cm_logan2g-userdebug
